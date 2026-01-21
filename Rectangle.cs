@@ -38,5 +38,7 @@
         public int CalculateCircumference() => 2 * Width + 2 * _height;
 
         public int CalculateArea() => Width * _height;
+
+        public string Description => $"A rectangle with widht: {Width} and height {_height}";
     }
 }
