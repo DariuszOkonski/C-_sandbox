@@ -3,9 +3,16 @@
     internal class Rectangle
     {
         public static int CountOfInstances { get; private set; }
+        private static DateTime _firstUsed;
+
         public static int NumberOfSides = 4;
         private int _height;
 
+
+        static Rectangle()
+        {
+            _firstUsed = DateTime.Now;
+        }
         public Rectangle(int width, int height)
         {
             Width = GetLengthOrDefault(width, nameof(Width));
