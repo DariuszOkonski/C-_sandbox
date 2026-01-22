@@ -2,6 +2,7 @@
 {
     internal class Rectangle
     {
+        public static int CountOfInstances { get; private set; }
         public static int NumberOfSides = 4;
         private int _height;
 
@@ -9,6 +10,7 @@
         {
             Width = GetLengthOrDefault(width, nameof(Width));
             _height = GetLengthOrDefault(height, nameof(_height));
+            ++CountOfInstances;
         }
 
         public int Width { get; }
