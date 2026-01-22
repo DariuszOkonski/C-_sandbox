@@ -2,6 +2,7 @@
 {
     internal class Rectangle
     {
+        public static int NumberOfSides = 4;
         private int _height;
 
         public Rectangle(int width, int height)
@@ -40,5 +41,8 @@
         public int CalculateArea() => Width * _height;
 
         public string Description => $"A rectangle with widht: {Width} and height {_height}";
+
+        public static string DescribeGenerally() => $"A plane figure with four straight sides and four right angles";
+
     }
 }
