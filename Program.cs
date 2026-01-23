@@ -1,13 +1,13 @@
-﻿using SandBox;
+﻿global using System.Diagnostics;
 
-//Console.WriteLine($"1 + 2 is {Calculator.Add(1, 2)}");
-//Console.WriteLine($"1 - 2 is {Calculator.Subtract(1, 2)}");
-//Console.WriteLine($"1 * 2 is {Calculator.Multiply(1, 2)}");
+var stopWatch = Stopwatch.StartNew();
 
-//Console.WriteLine(Rectangle.DescribeGenerally());
-//Console.WriteLine(Rectangle.NumberOfSides);
+for (int i = 0; i < 10000; i++)
+{
+    Console.WriteLine($"Loop number {i}");
+}
 
-var rectangle1 = new Rectangle(1, 1);
-var rectangle2 = new Rectangle(2, 2);
+stopWatch.Stop();
 
-Console.WriteLine("Count of Rectangle objects is " + Rectangle.CountOfInstances);
+Console.WriteLine("==================");
+Console.WriteLine("Time in ms: " + stopWatch.ElapsedMilliseconds);
