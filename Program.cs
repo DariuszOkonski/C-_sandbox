@@ -1,11 +1,20 @@
-﻿Console.WriteLine("==== Pizza app ====");
+﻿//Console.WriteLine("==== Pizza app ====");
 
-Cheddar cheddar = new Cheddar();
-Console.WriteLine(cheddar.Name);
+//var ingredients = new List<Ingredient>
+//{
+//    new Cheddar(), new TomatoSauce(), new Mozzarella()
+//};
 
-Ingredient ingredient = new Cheddar();
-Console.WriteLine(ingredient.Name);
+//foreach (Ingredient ingredient in ingredients)
+//{
+//    Console.WriteLine(ingredient.Name);
+//}
 
 
+using SandBox.NumbersSumCalculator;
 
-//Console.ReadLine();
+Console.WriteLine("==== numbers sum calculator ====");
+var numbers = new List<int> { 1, 4, 6, -1, 12, 44, -8, -19 };
+var sum = new NumbersSumCalculator().Calculate(numbers);
+
+Console.WriteLine("Sum is: " + sum);
