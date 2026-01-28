@@ -1,5 +1,5 @@
-﻿public class Mozzarella
+﻿public class Mozzarella : Ingredient
 {
-    public string Name => "Mozarella";
+    public override string Name => "Mozarella";
     public bool IsLight { get; }
 }

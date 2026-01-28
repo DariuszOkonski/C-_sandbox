@@ -1,5 +1,5 @@
-﻿public class TomatoSauce
+﻿public class TomatoSauce : Ingredient
 {
-    public string Name => "Tomato sauce";
+    public override string Name => "Tomato sauce";
     public int TomatosIn100Grams { get; }
 }
