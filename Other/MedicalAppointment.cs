@@ -1,4 +1,4 @@
-﻿namespace SandBox
+﻿namespace SandBox.Other
 {
     internal class MedicalAppointment
     {
