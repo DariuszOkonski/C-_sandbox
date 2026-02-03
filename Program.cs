@@ -1,27 +1,20 @@
-﻿//using SandBox.NumbersSumCalculator;
+﻿
 
-//var numbers = new List<int> { 1, 4, 6, -1, 12, 44, -8, -19 };
-//bool shallAddPositiveOnly = true;
-//int sum;
+using SandBox.Other;
+using SandBox.Pizza;
 
-//var calculator = shallAddPositiveOnly
-//        ? new PositiveNumbersSumCalculator()
-//        : new NumbersSumCalculator();
+var pizza = new Pizza();
+pizza.AddIngredient(new Cheddar());
+pizza.AddIngredient(new Mozzarella());
+pizza.AddIngredient(new TomatoSauce());
 
-//if (shallAddPositiveOnly)
-//{
-//    sum = calculator.Calculate(numbers);
-//}
-//else
-//{
-
-//    sum = calculator.Calculate(numbers);
-//}
+//Console.WriteLine(pizza.Describe());
 
 
-//Console.WriteLine("Sum is: " + sum);
+var cheddar = new Cheddar();
 
+Console.WriteLine(new TomatoSauce());
+Console.WriteLine(new Rectangle(1, 1));
+Console.WriteLine(new List<int>());
 
-
-
-Console.WriteLine("Program");
+Console.ReadLine();

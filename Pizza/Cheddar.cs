@@ -1,4 +1,6 @@
-﻿public class Cheddar : Ingredient
+﻿using SandBox.Pizza;
+
+public class Cheddar : Cheese
 {
     public override string Name => "Cheddar cheese";
     public int AgedForMonths { get; }
