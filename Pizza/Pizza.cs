@@ -7,7 +7,7 @@
         public void AddIngredient(Ingredient ingredient) =>
             _ingredients.Add(ingredient);
 
-        public string Describe() =>
+        public override string ToString() =>
             $"This is a pizza with {string.Join(", ", _ingredients)}";
     }
 }
