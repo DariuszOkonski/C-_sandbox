@@ -1,5 +1,18 @@
 ﻿public class Ingredient
 {
+    //public Ingredient()
+    //{
+    //    Console.WriteLine("Constructor from the Ingredient class");
+    //}
+
+    public Ingredient(int priceIfExtraTopping)
+    {
+        Console.WriteLine("Constructor from the Ingredient class");
+        PriceIfExtraTopping = priceIfExtraTopping;
+    }
+
+    public int PriceIfExtraTopping { get; }
+
     public override string ToString() => Name;
     public virtual string Name { get; } = "Some ingredient";
     public int PublicField;
